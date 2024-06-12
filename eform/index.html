@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personal Data Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <!-- jQuery -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+
+<body>
+    <div class="container">
+
+        <h2>Employee Registration</h2>
+        <form id="simpleForm" action="submit_form.php" method="post" enctype="multipart/form-data">
+            <img alt="Office Symbol" src="logo.png" class="office-symbol">
+            <h2>PERSONAL DATA</h2>
+
+            <div class="form-group row">
+                <div class="col-md-6">
+                    <label for="name" class="boldtxt">Name(Max 30 characters)</label>
+                    <input type="text" id="name" name="name" maxlength="30" class="form-control"><br>
+                </div>
+                <div class="col-md-6">
+                    <label for="father-husband-name" class="boldtxt">Father / Husband Name(Max 30 characters)</label>
+                    <input id="father-husband-name" name="father_husband_name" maxlength="30" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="reference" class="boldtxt">Reference by</label>
+                <input id="reference" name="reference_by" class="form-control "><br>
+            </div>
+
+
+            <div class="form-group row">
+                <div class="col-md-4">
+                    <label for="dob" class="boldtxt">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" value="2006-01-01" class="form-control"><br><br>
+                </div>
+                <div class="col-md-4">
+                    <label for="joining_date" class="boldtxt">Joining Date:</label>
+                    <input type="date" id="joining_date" name="joining_date" class="form-control">
+                </div>
+
+                <div class="col-md-4">
+                    <label for="joining_age" class="boldtxt">Joining(@Age):</label>
+                    <input type="text" id="joining_age" name="joining_age" readonly class="form-control">
+                </div>
+
+            </div>
+
+
+            <div class="form-group row">
+                <div class="col-md-6">
+                    <label for="qualification" class="boldtxt">Qualification</label>
+                    <select id="qualification" name="qualification" class="form-control">
+                        <option value="" selected disabled>Select qualification</option>
+                        <option value="10th">10th</option>
+                        <option value="10th-failed">10th-Failed</option>
+                        <option value="12th">12th</option>
+                        <option value="12th-failed">12th-Failed</option>
+                        <option value="b.com">B.Com (Bachelor of Commerce)</option>
+                        <option value="b.a">B.A (Bachelor of Arts)</option>
+                        <option value="b.b.a">B.B.A (Bachelor of Business Administration)</option>
+                        <option value="b.s.c">B.S.C (Bachelor of Science)</option>
+                        <option value="Other">Other</option>
+                    </select><br>
+                </div>
+                <br>
+                <div class="col-md-6">
+                    <input id="otherQualification" name="otherQualification" class="form-control mt-2"
+                        placeholder="Enter qualification if 'Other' selected">
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <div class="col-md-6">
+                    <label for="selectlanguage" class="boldtxt">Select Your Languages</label>
+                    <select id="languageDropdown" name="select_languages" class="form-control">
+                        <option value="" selected disabled>Select language</option>
+                        <option value="Assamese">Assamese</option>
+                        <option value="Bengali">Bengali</option>
+                        <option value="Bodo">Bodo</option>
+                        <option value="Dogri">Dogri</option>
+                        <option value="Gujarati">Gujarati</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Kannada">Kannada</option>
+                        <option value="Kashmiri">Kashmiri</option>
+                        <option value="Konkani">Konkani</option>
+                        <option value="Maithili">Maithili</option>
+                        <option value="Malayalam">Malayalam</option>
+                        <option value="Manipuri">Manipuri</option>
+                        <option value="Marathi">Marathi</option>
+                        <option value="Nepali">Nepali</option>
+                        <option value="Odia">Odia</option>
+                        <option value="Punjabi">Punjabi</option>
+                        <option value="Sanskrit">Sanskrit</option>
+                        <option value="Santali">Santali</option>
+                        <option value="Sindhi">Sindhi</option>
+                        <option value="Tamil">Tamil</option>
+                        <option value="Telugu">Telugu</option>
+                        <option value="Urdu">Urdu</option>
+                        <option value="Other">Other</option>
+                    </select><br><br>
+                </div>
+                <div class="col-md-6">
+                    <label for="selectlanguage" class="boldtxt"> </label>
+                    <input id="inputCharacter" name="enter_character" placeholder="Enter a character"
+                        class="form-control"><br>
+                </div>
+            </div>
+
+            <div class="form group row">
+                <div class="col-md-6">
+                    <label for="experience" id="experience_label" class="boldtxt">Working Experience:</label>
+                    <select id="experience_years" name="experience_years" class="form-control">
+                        <option value="">Years</option>
+                    </select><br>
+                </div>
+                <div class="col-md-6">
+                    <label for="experience" id="experience_label" class="boldtxt"> </label>
+                    <select id="experience_months" name="experience_months" class="form-control">
+                        <option value="">Months</option><br>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <div class="col-md-6">
+                    <label for="designation" class="boldtxt">Designation</label>
+                    <input id="designation" name="designation" class="form-control"><br>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="salary" class="boldtxt">Salary Offered</label>
+                    <input id="salary" name="salary" maxlength="9" class="form-control"><br>
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <div class="col-md-6">
+                    <label for="presentAddress" class="boldtxt">Present Address</label>
+                    <input id="presentAddress" name="presentAddress" class="form-control"><br>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="presentState" class="boldtxt">State</label>
+                    <select id="presentState" name="presentState" class="form-select">
+                        <option value="" selected disabled>Select your state</option>
+                    </select><br>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="presentCity" class="boldtxt">City</label>
+                    <select id="presentCity" name="presentCity" class="form-select">
+                        <option value="" selected disabled>Select your city</option>
+                        <option value="Other">Other</option>
+                    </select><br>
+                    <input type="text" id="otherCity" name="otherCity" class="form-control"
+                        placeholder="Enter City if 'Other' selected" style="display: none;"><br>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="presentPincode" class="boldtxt">Pincode</label>
+                    <input id="presentPincode" name="presentPincode" class="form-control" maxlength="6"><br>
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <div class="col-md-6">
+                    <label for="permanentAddress" class="boldtxt">Permanent Address</label>
+                    <input id="permanentAddress" name="permanentAddress" class="form-control">
+                </div>
+
+                <div class="col-md-6">
+                    <label for="permanentState" class="boldtxt">State</label>
+                    <select id="permanentState" name="permanentState" class="form-select"></select><br>
+                </div>
+                <div class="col-md-6">
+                    <label for="permanentCity" class="boldtxt">City</label>
+                    <select id="permanentCity" name="permanentCity" class="form-select"><br>
+                        <option value="" selected disabled>Select your city</option>
+                        <option value="Others">Others</option>
+                    </select>
+                    <input type="text" id="otherpermanentCity" name="otherpermanentCity" class="form-control"
+                        style="display: none;" placeholder="Enter City if 'Other' selected">
+                </div>
+                <div class="col-md-6">
+                    <label for="permanentPincode" class="boldtxt">Pincode</label>
+                    <input id="permanentPincode" name="permanentPincode" maxlength="6" class="form-control">
+                </div>
+                <div class="col-md-6">
+                    <input type="checkbox" id="sameAsPresent" name="sameAsPresent">
+                    <label for="sameAsPresent">Same as Present Address</label><br><br>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-md-3">
+                    <i class="fa-solid fa-phone"></i> <label for="primary" class="boldtxt">Primary No</label>
+                    <input id="primary" name="primary_no" maxlength="13" value="+91" type="tel" class="form-control">
+                </div>
+
+                <div class="col-md-3">
+                    <i class="fa-solid fa-phone"></i> <label for="alternative" class="boldtxt">Alternative No</label>
+                    <input id="alternative" name="alternative_no" maxlength="13" value="+91" type="tel"
+                        class="form-control">
+                </div>
+                <div class="col-md-3">
+                    <i class="fa-brands fa-whatsapp"></i> <label for="whatsappNumber" class="boldtxt">WhatsApp
+                        Number</label>
+                    <input id="whatsappNumber" name="whatsapp_Number" maxlength="13" value="+91" type="tel"
+                        class="form-control">
+                </div>
+
+                <div class="col-md-3">
+                    <i class="fa-solid fa-envelope"></i> <label for="e-mail" class="boldtxt">E-Mail ID</label>
+                    <input id="e-mail" name="e_mail" class="form-control">
+                </div>
+                <div class="col-md-3">
+                    <input id="sameAsPrimary" name="sameAsPrimary" type="checkbox">
+                    <label for="sameAsPrimary">Same as WhatsApp Number</label><br>
+                </div>
+                <div class="col-md-3">
+                    <input id="sameAsAlternative" name="sameAsAlternative" type="checkbox">
+                    <label for="sameAsAlternative">Same as whatsappNumber</label><br>
+                    <br>
+                </div>
+            </div>
+
+
+
+            <div class="form-group">
+                <i class="fa-solid fa-tty"></i> <label for="permanent-phone" class="boldtxt">Parents Ph. No</label>
+                <input id="permanent-phone" name="permanent_phone" maxlength="13" type="tel" class="form-control"><br>
+            </div>
+
+
+            <div class="form-group row">
+                <div class="form-group">
+                    <label for="marital_status" class="boldtxt">Marital Status:</label>
+                    <select id="marital_status" name="marital_status" class="form-select">
+                        <option value="" selected disabled>Select your status</option>
+                        <option value="single">Single</option>
+                        <option value="married">Married</option>
+                        <option value="divorced">Divorced</option>
+                        <option value="widowed">Widowed</option>
+                        <option value="seperated">Separated</option>
+                    </select><br>
+                </div>
+            </div>
+
+            <div class="form group row">
+                <div class="col-md-6">
+                    <label for="spouse-name" class="boldtxt">Name of The Spouse (As Per Adhaar Card) (Max 30
+                        characters)</label>
+                    <input id="spouse-name" name="spouse_name" maxlength="30" class="form-control"><br><br>
+                </div>
+                <div class="col-md-6">
+                    <i class="fa-solid fa-mobile-button"></i> <label for="Spouse-Number"
+                        class="boldtxt">Spouse-Contact-Number</label>
+                    <input id="Spouse-Number" name="Spouse_number" maxlength="13" value="+91" type="tel"
+                        class="form-control"><br><br>
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <div class="col-md-4">
+                    <label for="acno" class="boldtxt">Account Number:</label>
+                    <input type="text" id="acno" name="acno" class="form-control"><br><br>
+                </div>
+                <div class="col-md-4">
+                    <label for="ifsc" class="boldtxt">IFSC Code:</label>
+                    <input type="text" id="ifsc" name="ifsc" class="form-control">
+                </div>
+                <div class="col-md-4">
+                    <label for="branch" class="boldtxt">Branch Name:</label>
+                    <input type="text" id="branch" name="branch" placeholder="Enter branch name" class="form-control">
+                </div>
+
+
+            </div>
+
+
+            <div class="form-group row">
+                <div class="col-md-6">
+                    <label for="esi-number" class="boldtxt">ESI Number</label>
+                    <input id="esi-number" name="esi_number" maxlength="17" class="form-control"><br>
+                </div>
+                <div class="col-md-6">
+                    <label for="pf-number" class="boldtxt">PF Number</label>
+                    <input id="pf-number" name="pf_number" maxlength="22" class="form-control"><br>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="site-name" class="boldtxt">Name of the Site</label>
+                <input id="site-name" name="site_name" class="form-control"><br>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-md-6">
+                    <label for="aadhar" class="boldtxt">Aadhar Card No</label>
+                    <input id="aadhar" name="aadhar_no" maxlength="12" class="form-control"><br>
+                </div>
+                <div class="col-md-6">
+                    <label for="file" class="boldtxt">Upload Aadhar Card Image</label>
+                
+                    <input type="file" class="form-control" id="adhaar_img_file" name="adhaar_img_file" accept=".pdf, .jpg, .png"><br>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-md-6">
+                    <label for="other-id" class="boldtxt">Any Other ID No</label>
+                    <select id="other-id" name="other_id" class="form-control">
+                        <option value="">Select ID Type</option>
+                        <option value="driving_license">Driving License No</option>
+                        <option value="ration_card">Ration Card No</option>
+                        <option value="voter_id">Voter ID No</option>
+                        <option value="other">Other</option>
+                    </select><br>
+                </div>
+                <br>
+                <div class="col-md-6">
+                    <!-- <div id="id-photo" style="display: none;"> -->
+                    <label for="image" class="boldtxt">Upload other-ID Image</label>
+                    <input id="other_id_image" name="other_id_image" type="file" accept=".pdf, .jpg, .png" class="form-control"><br>
+                    <!-- </div> -->
+                </div>
+
+
+            </div>
+
+            <div class="form-group row">
+                <div class="col-md-6">
+                    <label for="employee-signature" class="boldtxt">Employee Signature</label>
+                    <input id="employee-signature" name="employee_signature" type="file"accept=".pdf, .jpg, .png"
+                        class="form-control"><br>
+                </div>
+                <div class="col-md-6">
+                    <label for="image" class="boldtxt">Upload Profile Image</label>
+                    <input id="profile_image" name="profile_image" type="file" accept=".pdf, .jpg, .png" class="form-control"><br>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="documented-by" class="boldtxt">Documented by (Max 30 characters)</label>
+                <input id="documented-by" name="documented_by" maxlength="30" class="form-control"><br>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit" class="btn btn-primary">
+            </div>
+
+        </form>
+        <div id="result" class="mt-3"></div>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

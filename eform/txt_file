@@ -1,0 +1,12 @@
+$sql = "INSERT INTO employees (name, father_husband_name,reference_by,dob,joining_date,age,qualification,otherQualification,select_languages,enter_character,
+    experience_years,experience_months,designation,salary,presentAddress,presentState,presentCity,otherCity,presentPincode,permanentAddress,permanentState,
+    permanentCity,otherpermanentCity,permanentPincode,primary_no,alternative_no,whatsapp_Number,e_mail,permanent_phone,marital_status_single,marital_status_married
+    ,marital_status_divorced,marital_status_widowed,marital_status_separated,spouse_name,Spouse_number,ac_number,ifsc_code,branch_name,esi_number,
+    pf_number,site_name,aadhar_no,adhaar_image,other_id,other_id_image,employee_signature,profile_image,documented_by) 
+
+VALUES ('$name', '$father_husband_name', '$reference_by','$dob','$joining_date','$age','$qualification','$otherQualification','$select_languages','$enter_character',
+    '$experience_years','$experience_months','$designation','$salary','$presentAddress','$presentState','$presentCity','$otherCity','$presentPincode','$permanentAddress',
+    '$permanentState','$permanentCity','$otherpermanentCity','$permanentPincode','$primary_no','$alternative_no','$whatsapp_Number','$e_mail','$permanent_phone',
+    '$marital_status_single','$marital_status_married','$marital_status_divorced','$marital_status_widowed','$marital_status_separated','$spouse_name',
+    '$Spouse_number','$ac_number','$ifsc_code','$branch_name','$esi_number','$pf_number','$aadhar_no','$adhaar_image','$other_id','$other_id_image',
+    '$employee_signature','$profile_image','$documented_by')";
